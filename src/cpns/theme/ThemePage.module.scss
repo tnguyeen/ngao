@@ -1,0 +1,53 @@
+.wrapper {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .phoa {
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        z-index: 2;
+        video {
+            height: 100vh;
+        }
+    }
+
+
+    .back-ground-theme {
+        height: 100vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        filter: blur(2px);
+
+        img {
+            filter: blur(8px) brightness(0.4);
+        }
+
+        video {
+            height: 100vh;
+        }
+    }
+
+    .switch-theme {
+        opacity: 0;
+        height: 200px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 3;
+        cursor: pointer;
+        transition-duration: 0.1s;
+    }
+
+    .switch-theme:hover {
+        opacity: 1;
+    }
+}

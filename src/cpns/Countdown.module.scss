@@ -1,0 +1,29 @@
+.wrapper {
+    font-weight: bolder;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    color: rgb(60, 60, 60);
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 50px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .count-down-box {
+        font-size: 40px;
+    }
+}
